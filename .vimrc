@@ -17,8 +17,8 @@ set ruler
 set linebreak
 
 " Automatic indentation
-filetype indent plugin on
-set autoindent
+" filetype indent plugin on
+" set autoindent
 
 " Number of spaces when Tab key is pressed
 set tabstop=4
