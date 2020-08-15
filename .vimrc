@@ -44,7 +44,7 @@ vmap 0 g0
 set guifont=Consolas:h11
 
 " Color Scheme in GUI
-colorscheme desert
+" colorscheme desert
 
 " Hide toolbar in GUI
 set guioptions-=T
