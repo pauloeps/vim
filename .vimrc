@@ -40,11 +40,13 @@ vmap 0 g0
 " How many characters will be displayed in one line
 " set textwidth=80
 
-" Set GUI font
-set guifont=Consolas:h11
+" Set GUI font if in Windows
+if has('win32')
+  set guifont=Consolas:h11
+endif
 
 " Color Scheme in GUI
-" colorscheme desert
+colorscheme desert
 
 " Hide toolbar in GUI
 set guioptions-=T
