@@ -40,13 +40,26 @@ vmap 0 g0
 " How many characters will be displayed in one line
 " set textwidth=80
 
-" Set GUI font if in Windows
-if has('win32')
-  set guifont=Consolas:h11
+" Set GUI font
+if has('gui_running')
+  if has('win32')
+    set guifont=Consolas:h11
+  elseif has('gui_gtk3')
+    set guifont=Monospace\ 11
+  endif
 endif
 
 " Color Scheme in GUI
-colorscheme desert
+if has('gui_running')
+  colorscheme desert
+endif
 
 " Hide toolbar in GUI
 set guioptions-=T
+
+" Use custom colorscheme 'Dracula' if it is installed'
+silent! packadd! dracula
+syntax enable
+if has('gui_running')
+  silent! colorscheme dracula
+endif
