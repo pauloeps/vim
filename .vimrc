@@ -11,7 +11,7 @@ set number
 set ruler
 
 " Encoding
-" set encoding=utf-8
+set encoding=utf-8
 
 " Break long lines without splitting words
 set linebreak
