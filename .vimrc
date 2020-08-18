@@ -5,7 +5,7 @@
 syntax on
 
 " Show line numbers
-" set number
+set number
 
 " Show file stats
 set ruler
@@ -37,8 +37,9 @@ vmap k gk
 vmap $ g$
 vmap 0 g0
 
-" How many characters will be displayed in one line
-" set textwidth=80
+" Set columns and lines 
+set columns=84
+set lines=24
 
 " Set GUI font
 if has('gui_running')
