@@ -1,13 +1,22 @@
 # vim
 My vim settings
 
-## Install 'Dracula' Theme
+## How to install colorschemes 
+
+Copy the ".vim" file to the colors directory:
 
 On Windows:
-mkdir "C:\Program Files (x86)\Vim\vim82\pack\themes\start"
+C:\Program Files (x86)\Vim\vim82\colors
 
 On Linux:
-mkdir -p ~/.vim/pack/themes/start
+~/.vim/colors
 
-Then, clone the repository:
-git clone https://github.com/dracula/vim.git dracula
+Create the directory if it doesn't exists.
+
+## Install fonts
+
+Install the 'Inconsolata' font on Linux: https://fonts.google.com/specimen/Inconsolata.
+
+Put the ".tff" files on ~/.fonts and run the command:
+
+fc-cache -f -v
