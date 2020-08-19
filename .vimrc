@@ -41,6 +41,16 @@ vmap 0 g0
 set columns=84
 set lines=24
 
+" Turn off sound
+if has ("gui_running")
+	autocmd GUIEnter * set vb t_vb=
+endif
+
+" Turn off swap file
+"   the swap file can be useful, it recovers the changes if to a file if your
+"   computer crashes and also prevent two instances editing the same file.
+" set noswapfile
+
 " Set GUI font
 if has('gui_running')
   if has('win32')
