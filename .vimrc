@@ -56,7 +56,7 @@ if has('gui_running')
   if has('win32')
     silent! set guifont=Consolas:h11
   elseif has('gui_gtk3')
-    silent! set guifont=Inconsolata\ 12
+    silent! set guifont=Inconsolata\ Medium\ 12
   endif
 endif
 
