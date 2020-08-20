@@ -62,7 +62,7 @@ endif
 
 " Color Scheme in GUI
 if has('gui_running')
-  silent! colorscheme wombat
+  silent! colorscheme jellybeans
 endif
 
 " Hide toolbar in GUI
