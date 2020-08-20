@@ -6,7 +6,7 @@ My vim settings
 Copy the ".vim" file to the colors directory:
 
 On Windows:
-C:\Program Files (x86)\Vim\vim82\colors
+C:\User\Name\vimfiles\colors
 
 On Linux:
 ~/.vim/colors
