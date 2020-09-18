@@ -58,7 +58,7 @@ if has('gui_running')
   if has('win32')
     silent! set guifont=Fira\ Mono:h12
   elseif has('gui_gtk3')
-    silent! set guifont=Fira\ Mono\ 12
+    silent! set guifont=Fira\ Code\ Regular\ 12
   endif
 endif
 
