@@ -23,8 +23,12 @@ set linebreak
 " Number of spaces when Tab key is pressed
 set tabstop=4
 
+" Number of spaces in indentation when using the '>>' command to indent
+" blocks of code.
+set shiftwidth=4
+
 " Insert spaces instead of tabs
-" set expandtab
+set expandtab
 
 " Move up/down editor lines
 nmap j gj
@@ -64,7 +68,7 @@ endif
 
 " Color Scheme in GUI
 if has('gui_running')
-	silent! colorscheme wombat256
+	silent! colorscheme moria
 endif
 
 " Hide toolbar in GUI
