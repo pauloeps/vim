@@ -43,13 +43,13 @@ vmap 0 g0
 
 " Set columns and lines 
 if has ("gui_running")
-  set columns=84
-  set lines=24
+    set columns=84
+    set lines=24
 endif
 
 " Turn off sound
 if has ("gui_running")
-	autocmd GUIEnter * set vb t_vb=
+    autocmd GUIEnter * set vb t_vb=
 endif
 
 " Turn off swap file
@@ -59,19 +59,23 @@ endif
 
 " Set GUI font
 if has('gui_running')
-  if has('win32')
-    silent! set guifont=Fira\ Mono:h12
-  elseif has('gui_gtk3')
-    silent! set guifont=Fira\ Code\ Regular\ 12
-  endif
+    if has('win32')
+        silent! set guifont=Fira\ Mono:h12
+    elseif has('gui_gtk3')
+        silent! set guifont=Fira\ Mono\ 12
+    endif
 endif
 
 " Color Scheme in GUI
 if has('gui_running')
-	silent! colorscheme moria
+    set background=dark
+    silent! colorscheme moria
 endif
 
 " Hide toolbar in GUI
 set guioptions-=T
 " Hide menubar in GUI
 set guioptions-=m
+
+" Set popup menu when right-clicking
+set mousemodel=popup
